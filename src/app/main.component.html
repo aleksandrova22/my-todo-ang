@@ -1,0 +1,14 @@
+<fieldset>
+    <!-- text1 = <input [(ngModel)]="text1" /> -->
+    <h1> Список дел </h1>
+    <label>Введите</label><br>
+    <div>
+              
+            <input [(ngModel)]="text" />
+            <item-app [text]="text" (out)="onAddItem($event)" />    
+            <hr>
+              
+    </div>
+  
+   
+</fieldset>
